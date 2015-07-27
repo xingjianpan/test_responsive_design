@@ -19,7 +19,7 @@
 
 <div class="container-fluid" ng-controller="AppCtrl"  >
 <div class="row" >
-  
+ 
 
 <!-- 最外一层 -->
   <div  ng-repeat="section in sections" 
@@ -40,18 +40,19 @@
        <div class="smart-object red"   ng-mouseenter="hoverIn()" ng-mouseleave="hoverOut()">
 
 
-            <div ng-show="hoverShow" class="green" >
+            <div ng-show="hoverShow" class="green" style="opacity:0.8;background-color:{{colors[$index]}} ">
 
-            <div  ng-show="hoverShow" class="smart-object" style="position:absolute; left:20px; bottom:70px;width:80%;"  >
+            <div  ng-show="hoverShow" class="smart-object" style="position:absolute; top:50px;left:20px; bottom:70px;width:80%; "  >
 
-             {{section.image}}
+              <h3>{{section.image}}</h3>
+
+              <span  style="color=#5f1023;">{{secton.color}}</span>
              <br>
-             MouseEnter:{{hoverShow}}
-               <br>
+             MouseEnter:{{hoverShow}}, 
              MouseLeave:{{hoverShow}}
-             <br>
+              
 
-             <span  style="color=#5f1023;">Remember your corss</span>
+             
             </div>
             </div>
 

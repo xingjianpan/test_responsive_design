@@ -5,7 +5,8 @@ function AppCtrl($scope){
     $scope.sections = [
         {
         	name: 'Clients',
-        	image: '01_Thumbs_mingrundlov.png'
+        	image: '01_Thumbs_mingrundlov.png' 
+         
         },
         {
         	name: 'Employees',
@@ -50,7 +51,7 @@ function AppCtrl($scope){
         {
         	name: 'Others',
         	image:'01_Thumbs_revelator.png'
-        },
+        }
 
  
 
@@ -77,5 +78,34 @@ function AppCtrl($scope){
     };
 
 
+
+    $scope.getRandomColor = function () {
+            var letters = '0123456789ABCDEF'.split('');
+            var color = '#';
+            for (var i = 0; i < 6; i++ ) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        };
 	 
+
+    $scope.colors=[];
+    for (var i=0;i<=$scope.sections.length;i++){
+        $scope.colors.push(getRandomColor());
+    }
 }
+
+
+
+
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
