@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html  ng-app>
+  <head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../public/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../public/css/style.css">
+
+
+<script src="../public/lib/jquery/dist/jquery.min.js"></script>
+<script src="../public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../public/lib/angular/angular.min.js"></script>
+<script src="../public/js/controller.js"></script>
+<title></title>
+</head>
+  <body>
+ 
+
+
+
+<div class="container-fluid" ng-controller="AppCtrl"  >
+<div class="row" >
+  
+
+<!-- 最外一层 -->
+  <div  ng-repeat="section in sections" 
+       class="col-xs-12 col-sm-6 col-md-4 col-lg-4 smart-object "  >
+   
+ 
+
+
+      <!-- 图片背景 -->
+      <div class="smart-object" style="width:100%;height:100%;position:absolute;">
+          <img src="../public/images/{{section.image}}" >
+      </div>
+
+
+
+
+       <!-- 鼠标悬停时候高亮 -->
+       <div class="smart-object red"   ng-mouseenter="hoverIn()" ng-mouseleave="hoverOut()">
+
+
+            <div ng-show="hoverShow" class="green" >
+
+            <div  ng-show="hoverShow" class="smart-object" style="position:absolute; left:20px; bottom:70px;width:80%;"  >
+
+             {{section.image}}
+             <br>
+             MouseEnter:{{hoverShow}}
+               <br>
+             MouseLeave:{{hoverShow}}
+             <br>
+
+             <span  style="color=#5f1023;">Remember your corss</span>
+            </div>
+            </div>
+
+       
+      
+       </div>
+     
+  </div>
+
+
+ 
+
+
+
+</div>
+</div>
+  </body>
+</html>

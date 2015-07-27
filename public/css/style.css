@@ -1,0 +1,140 @@
+
+
+	/*==========  Mobile First Method  ==========*/
+ 
+	/* Custom, iPhone Retina */
+	@media only screen and (min-width : 320px){
+
+		 .smart-object
+		{
+		 
+		 	
+			position: relative;
+		
+			border:1px;
+			border-style: dotted;
+			float:left;
+			width:100%;
+			height: 0;
+			padding-bottom:75%;
+		}
+
+	}
+ 
+	 
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (min-width : 480px){
+
+			 .smart-object
+		{
+		 
+		 	
+			position: relative;
+		 
+			border:1px;
+			border-style: dotted;
+			float:left;
+			width:100%;
+			height: 0;
+			padding-bottom:60%;
+		}
+ 
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px){
+	 .smart-object
+		{
+		 
+		 
+			position: relative;
+		 
+			border:1px;
+			border-style: dotted;
+			float:left;
+			width:100%;
+			height: 0;
+			padding-bottom:60%;
+		}
+
+
+ 
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px){
+ 
+ .smart-object
+		{
+		 
+		 
+			position: relative;
+		 
+			border:1px;
+			border-style: dotted;
+			float:left;
+			width:50%;
+			height: 0;
+			padding-bottom:30%;
+		}
+
+	}
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px){
+ .smart-object
+		{
+			position: relative;
+			 
+			border:1px;
+			border-style: dotted;
+			 
+			float:left;
+			width:33.333%;
+			height: 0;
+			padding-bottom:20%;
+
+		}
+	}
+ 
+
+
+img {
+    max-width: 100%;
+   
+}
+
+.red {
+
+	width:100%; height:100%; 
+	position: absolute; 
+	left:0;top:0; margin:0 auto ;
+ 	color: rgb(255,255,255); 
+    
+}
+
+.green
+{
+
+	width:90%; 
+	height:90%; 
+	position: absolute; 
+	left:5%;
+	top:5%; 
+	margin:0 auto ;
+ 	color: rgb(255,255,255); 
+    background-color:rgba(19,19,19,0.5);
+  
+}
+
+
+
+.italic {
+  font-style: italic;
+  color: black;
+}
+
+.active {
+    background-color: orange;
+}
