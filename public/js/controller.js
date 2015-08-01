@@ -71,12 +71,40 @@ function AppCtrl($scope){
 
     $scope.hoverIn = function(){
         this.hoverShow = true;
+           var x = event.x;
+        var y = event.y;
+        var offsetX = event.offsetX;
+        var offsetY = event.offsetY;
+
+    // you have lots of things to try here, not sure what you want to calculate
+    console.log(event, x, y, offsetX, offsetY);
     };
 
     $scope.hoverOut = function(){
         this.hoverShow = false;
     };
 
+ 
+    $scope.hoverMove = function(){
+        
+        var x = event.x;
+        var y = event.y;
+        var offsetX = event.offsetX;
+        var offsetY = event.offsetY;
+
+    // you have lots of things to try here, not sure what you want to calculate
+    console.log(event, x, y, offsetX, offsetY);
+    };
+
+
+    $scope.imageStyle = function(){
+
+        var myStyle="{max-height:100%; overflow:hidden;  }";
+            
+            console.log(myStyle);
+            return myStyle;
+
+    };
 
 
     $scope.getRandomColor = function () {

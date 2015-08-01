@@ -1,7 +1,7 @@
 {
   "directory": "public/lib",
-  "proxy":"http://10.40.14.56:80",
-  "https-proxy":"http://10.40.14.56:80",
+  "proxy":"",
+  "https-proxy":"",
   "strict-ssl": false
 }
 

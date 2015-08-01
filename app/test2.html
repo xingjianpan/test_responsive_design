@@ -7,6 +7,10 @@
 
 
 <script src="../public/lib/jquery/dist/jquery.min.js"></script>
+<script src="../public/lib/interactive_bg/jquery.interactive_bg.min.js"></script>
+
+
+
 <script src="../public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../public/lib/angular/angular.min.js"></script>
 <script src="../public/js/controller.js"></script>
@@ -29,15 +33,17 @@
 
 
       <!-- 图片背景 -->
-      <div class="smart-object" style="width:100%;height:100%;position:absolute;">
-          <img src="../public/images/{{section.image}}" >
+      <div class="smart-object background-image" style="width:100%;height:100%;position:absolute;">
+          
+         <img  src="../public/images/{{section.image}}">
+           
       </div>
-
+    
 
 
 
        <!-- 鼠标悬停时候高亮 -->
-       <div class="smart-object red"   ng-mouseenter="hoverIn()" ng-mouseleave="hoverOut()">
+       <div class="smart-object red"   ng-mouseenter="hoverIn()" ng-mouseleave="hoverOut()" ng-mousemove="hoverMove()">
 
 
             <div ng-show="hoverShow" class="green" style="opacity:0.8;background-color:{{colors[$index]}} ">
@@ -50,6 +56,8 @@
              <br>
              MouseEnter:{{hoverShow}}, 
              MouseLeave:{{hoverShow}}
+             <a href="#">test</a>
+             {{myStyle}}
               
 
              
@@ -69,5 +77,9 @@
 
 </div>
 </div>
+
+
+  
+
   </body>
 </html>
